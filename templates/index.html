@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+ <!-- Home section design -->
+ <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Shaik Najmus Sakib</h1>
+        <h3>And I'm a <span> Python Web Developer and Data scientist</span></h3>
+        <p>
+            <span>Aspiring</span> Technical Python, Web Developer and Data science Programmer | <span>Seeking</span> An Entry-Level Developer and Data Science Position  | 👨🏻‍💻 <span>Proficiency</span> With Python, Django and Machine Learning libraries such as Scikit-learn, Keras, and TensorFlow
+        </p>
+        <!-- Social media icons -->
+        <div class="social-media">
+            <a href="">
+                <img src="{% static 'icons/twitter.svg' %}" class="logo" name="twitter">
+            </a>
+            <a href="https://www.instagram.com/shaikh_44w/">
+                <img src="{% static 'icons/instagram-alt.svg' %}" class="logo" name="instagram-alt">
+            </a>
+            <a href="https://www.linkedin.com/in/shaik-sakib-b2a99921a/">
+                <img src="{% static 'icons/linkedin.svg' %}" class="logo" name="linkedin">
+            </a>
+            <a href="https://github.com/ShakibDS">
+                <img src="{% static 'icons/github.svg' %}" class="logo" name="github">
+        </div>
+        <a href="https://drive.google.com/file/d/1jf5fqqtx0pnC2svazWPlOL51M0GqV4ES/view?usp=share_link" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="{% static 'images/Profile.png' %}" alt="" />
+    </div>
+</section>
+
+<!-- About section design -->
+<section class="about" id="about">
+    <div class="about-continer">
+        <div class="about-img">
+            <img src="{% static 'images/Profile.png' %}" alt="" />
+        </div>
+    
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Hi there, I'm SHAKIB, am proficient in Python programming language and have a strong foundation in statistics and data analysis. I have experience working with popular machine learning libraries such as Scikit-learn, Keras, and TensorFlow, and have developed predictive models using regression, classification, and clustering algorithms. I am adept at performing exploratory data analysis and data preprocessing techniques such as feature scaling, handling missing values, and outlier detection.
+                I am also familiar with techniques for model evaluation and selection, such as cross-validation and hyperparameter tuning. Additionally, I have experience with SQL and data visualization tools such as Matplotlib and Tableau. I am a quick learner and eager to enhance my skills and knowledge in the field of machine learning
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- skills section design -->
+<section class="skills" id="skills">
+  <h2 class="heading">My <span>Skills</span></h2>
+  <div class="skills-container">
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/code.svg' %}" alt="">
+      <h3>Programming Languages</h3>
+      <p>
+        I am proficient in programming languages such as Python and SQL.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/brain.svg' %}" alt="">
+      <h3>Machine Learning Frameworks</h3>
+      <p>
+        I have experience working with Scikit-learn, Keras, and TensorFlow for developing machine learning models.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/chart.svg' %}" alt="">
+      <h3>Data Analysis</h3>
+      <p>
+        I am skilled in using data manipulation and analysis libraries such as Pandas, NumPy, Matplotlib, and Seaborn.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/settings.svg' %}" alt="">
+      <h3>Data Preprocessing</h3>
+      <p>
+        I have experience with Scikit-learn and Pandas for data preprocessing and feature engineering.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/layers.svg' %}" alt="">
+      <h3>Deep Learning</h3>
+      <p>
+        I have experience with deep learning techniques such as Convolutional Neural Networks , Recurrent Neural Networks, and Generative Adversarial Networks.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/chat.svg' %}" alt="">
+      <h3>NLP</h3>
+      <p>
+        I have experience with NLP techniques such as sentiment analysis, named entity recognition, and text classification.
+      </p>
+    </div>
+    <div class="skills-box">
+      <img class="bx" src="{% static 'icons/cloud.svg' %}" alt="">
+      <h3>Cloud Computing Platforms</h3>
+      <p>
+        I have experience working with cloud computing platforms such as AWS, Google Cloud, and Azure.
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+.skills {
+  background-color: #1f242d;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.skills h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skills p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+  padding: 10px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.skills-box {
+  background-color: #323946;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 300px;
+}
+
+.skills-box img {
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.skills-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-box h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skills-box p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+}
+</style>
+
+
+
+<!-- Portfolio design -->
+<!-- Portfolio design -->
+<section class="portfolio " id="portfolio">
+    <h2 class="heading">Latest<span>project</span></h2>
+    <div class="portfolio-continer">
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/1.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Salary Prediction Model + EDA</h4>
+                <!-- <p>Check out my latest project: Cloning YouTube.com with HTML and CSS!.</p> -->
+                <a href="https://www.kaggle.com/code/shaikshakibs/salary-prediction-model-eda">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/2.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Student Performance Analysis and Prediction Website</h4>
+                <!--<p>Python Assignments Mastered: Check out Our Completed Assignments Uploaded on GitHub!.</p>-->
+
+                <a href="https://www.kaggle.com/code/shaikshakibs/predicting-student-performance">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/3.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Detecting Plagiarism</h4>
+                <!--<p>Check out my latest python exercises repository.</p>-->
+
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/4.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Predicting Student Performance</h4>
+                <!--<p>How to define variable in python? | page design by using HTML and CSS.</p>-->
+
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/5.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Movies Recommender System</h4>
+                <!--<p>It is an efficiently designed and responsive login page in #HTML and #CSS.</p>-->
+
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/6.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Heart Attack Prediction Analysis (Logistic Regression)</h4>
+                <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
+
+                <a href="https://www.kaggle.com/code/shaikshakibs/heart-attack-prediction-analysis-logistic-reg">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/6.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Car Price Prediction (Linear Regression - RFE)</h4>
+                <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
+
+                <a href="https://www.kaggle.com/code/shaikshakibs/car-price-prediction">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img class='main-img' src="{% static 'Projects-img/6.jpg' %}" alt="">
+            <div class="portfolio-layer">
+                <h4>Portfolio Website using Django</h4>
+                <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>-->
+
+                <a href="#">
+                    <img src="{% static 'icons/bx-link-external.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Contact setion design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="" method='post'>
+        {% csrf_token %}
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" name='fname'>
+            <input type="email" placeholder="Email Address" name='email'>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number" name='number'>
+            <input type="text" placeholder="Subject" name='subject'>
+        </div>
+        <textarea id="" cols="30" rows="10" placeholder="Your Message" name='message'></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- About section design -->
+<section class="about" id="about">
+    <div class="about-continer">
+        <div class="about-img">
+            <img src="{% static 'images/Profile.png' %}" alt="" />
+        </div>
+    
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Hi there, I'm SHAKIB, am proficient in Python programming language and have a strong foundation in statistics and data analysis. I have experience working with popular machine learning libraries such as Scikit-learn, Keras, and TensorFlow, and have developed predictive models using regression, classification, and clustering algorithms. I am adept at performing exploratory data analysis and data preprocessing techniques such as feature scaling, handling missing values, and outlier detection.
+                I am also familiar with techniques for model evaluation and selection, such as cross-validation and hyperparameter tuning. Additionally, I have experience with SQL and data visualization tools such as Matplotlib and Tableau. I am a quick learner and eager to enhance my skills and knowledge in the field of machine learning and Python programming
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}
